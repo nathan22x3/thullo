@@ -10,7 +10,7 @@ import tw from 'twin.macro';
 
 const Navbar = () => {
   return (
-    <section css={tw`flex justify-between items-center px-6 py-2`}>
+    <nav css={tw`flex justify-between items-center px-6 py-4 shadow`}>
       <div css={tw`flex items-center gap-x-20`}>
         <Link to='/'>
           <Logo />
@@ -28,7 +28,7 @@ const Navbar = () => {
         <SearchInput />
         <Account name='Nathan Nguyen' />
       </div>
-    </section>
+    </nav>
   );
 };
 

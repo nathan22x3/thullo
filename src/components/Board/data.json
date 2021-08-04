@@ -1,0 +1,143 @@
+[
+  {
+    "id": "38685798-1c13-461c-8b60-cc2dcb279aa3",
+    "title": "Backlog 🤔",
+    "cards": [
+      {
+        "id": "ebdde890-5fa3-4cb5-adbe-2aae5615512a",
+        "cover": "",
+        "title": "✋🏿 Add what you'd like to work on below",
+        "labels": ["Concept"],
+        "members": [],
+        "comments": [],
+        "attach_files": ["188ca323-1bf8-426a-a500-3b0251861590"]
+      },
+      {
+        "id": "11643e85-a124-4cc9-8595-61aa0101af05",
+        "cover": "https://picsum.photos/seed/53b3ecc3-f8cc-4cee-985b-89347da69b3c/1095/650.webp",
+        "title": "Github jobs challenge",
+        "labels": ["Technical", "Design"],
+        "members": [
+          {
+            "id": "f6cfb7cf-1e38-4aad-bd56-e9e06cfd8d5d",
+            "name": "Mirialan",
+            "avatar_url": "https://starwarsavatar.com/img/selection-icons/mirialan/mirialan.svg"
+          }
+        ],
+        "comments": [
+          "a238ea91-081f-4139-afd5-37bab7b14067",
+          "2dffb8738-3671-4d34-8826-ea02d1c39985"
+        ],
+        "attach_files": ["27a8001b-e752-421e-930b-12fa70a355fe"]
+      }
+    ]
+  },
+  {
+    "id": "ba92505f-d99f-4f27-8ade-20531cf21b18",
+    "title": "In Progress 📚",
+    "cards": [
+      {
+        "id": "d55d3fbd-14f4-4d9c-ae3f-89201d414618",
+        "cover": "https://picsum.photos/seed/65916625-998f-4d14-b3c4-4b27aefe2377/1095/650.webp",
+        "title": "✋🏿 Move anything 'ready' here",
+        "labels": ["Technical", "Design"],
+        "members": [
+          {
+            "id": "f6cfb7cf-1e38-4aad-bd56-e9e06cfd8d5d",
+            "name": "Mirialan",
+            "avatar_url": "https://starwarsavatar.com/img/selection-icons/mirialan/mirialan.svg"
+          },
+          {
+            "id": "9a6c0249-e304-4d57-bd82-d04b2e60e1e3",
+            "name": "Zabrak",
+            "avatar_url": "https://starwarsavatar.com/img/selection-icons/zabrak/zabrak.svg"
+          }
+        ],
+        "comments": [
+          "7e82a188-d592-4f61-844a-fd2fbe0c4d75",
+          "33235ddd-870f-4835-bf7d-6b8c7aef1a87"
+        ],
+        "attach_files": ["5fb60baa-c98b-438b-a485-b0b0dbf89af8"]
+      },
+      {
+        "id": "92cf09a1-0219-48cb-92c4-b8a857147edb",
+        "cover": "https://picsum.photos/seed/d9b3fa85-8bf1-4b44-935b-4bb0e796112c/1095/650.webp",
+        "title": "Unsplash challenges - Back-end",
+        "labels": ["Front-end", "Concept"],
+        "members": [
+          {
+            "id": "f6cfb7cf-1e38-4aad-bd56-e9e06cfd8d5d",
+            "name": "Mirialan",
+            "avatar_url": "https://starwarsavatar.com/img/selection-icons/mirialan/mirialan.svg"
+          }
+        ],
+        "comments": [
+          "6bee8b9e-9f6c-46fe-b0a9-40d1e5aa2b6d",
+          "59a4071a-fd6a-4bac-9a0e-8f7a6962f278",
+          "9ab2b562-0c19-44d2-a458-01ef1838eda9"
+        ],
+        "attach_files": ["7c6f6b56-66be-4b62-814f-636787f1d5d4"]
+      }
+    ]
+  },
+  {
+    "id": "b149e323-94e2-4a3a-bce4-b158613dbd56",
+    "title": "In Review ⚙️",
+    "cards": [
+      {
+        "id": "12b1a14d-b6d1-43ed-872f-65d0897bb93c",
+        "cover": "https://picsum.photos/seed/8d6a2e1c-fa86-46fd-ad00-e0085f4d0b62/1095/650.webp",
+        "title": "✋🏿 Move anything that is actually started here",
+        "labels": ["Technical", "Concept"],
+        "members": [
+          {
+            "id": "f6cfb7cf-1e38-4aad-bd56-e9e06cfd8d5d",
+            "name": "Mirialan",
+            "avatar_url": "https://starwarsavatar.com/img/selection-icons/mirialan/mirialan.svg"
+          }
+        ],
+        "comments": [
+          "0104deda-845e-4930-aa74-045c6d75eb68",
+          "d412f2f9-f283-4fb3-91e8-8bf462f0ab27"
+        ],
+        "attach_files": ["17e34681-9e8b-4ad9-82cc-413b305d9e9b"]
+      },
+      {
+        "id": "1db70db9-d85c-4929-a454-7ac6c95b9b90",
+        "cover": "",
+        "title": "Add finishing touches for Windbnb solution",
+        "labels": ["Full-stack"],
+        "members": [],
+        "comments": [],
+        "attach_files": []
+      }
+    ]
+  },
+  {
+    "id": "d638ffb4-a41d-4923-a4e5-b93c1ce34c30",
+    "title": "Completed 🙌🏽",
+    "cards": [
+      {
+        "id": "3e250591-4e93-414c-8e23-e1704eb09142",
+        "cover": "https://picsum.photos/seed/138395d7-d0a9-4e1a-961e-515222b1c2cb/1095/650.webp",
+        "title": "✋🏿 Move anything from doing to done here",
+        "labels": ["Technical", "Concept"],
+        "members": [
+          {
+            "id": "b3f614f8-3ef9-4242-a5b0-bb7579264012",
+            "name": "Human",
+            "avatar_url": "https://starwarsavatar.com/img/selection-icons/human/human.svg"
+          }
+        ],
+        "comments": [
+          "fe034c3f-f40a-466f-b679-66466b34e0e1",
+          "21612242-b35d-46ea-89ea-f866b8aa81e2",
+          "5d281ae7-235e-4386-a276-33461d26e899",
+          "59f3c02b-e96f-432d-9a21-f4cba6f1d7c8",
+          "62afdc62-ed61-4203-b396-db62562cb0f7"
+        ],
+        "attach_files": ["7d1fb86e-9004-4330-8e56-0478e846142e"]
+      }
+    ]
+  }
+]
