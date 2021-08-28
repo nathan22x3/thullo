@@ -14,9 +14,15 @@ const BoardCard = ({
   members,
   comments,
   attach_files,
+  innerRef,
+  ...rest
 }) => {
   return (
-    <div css={tw`flex flex-col p-3 rounded-xl shadow-md bg-white`}>
+    <div
+      ref={innerRef}
+      css={tw`flex flex-col p-3 rounded-xl shadow-md bg-white`}
+      {...rest}
+    >
       {cover && <img src={cover} alt={title} css={tw`mb-3 rounded-xl`} />}
       <p css={tw`mb-[18px] font-noto`}>{title}</p>
       <div css={tw`flex gap-x-3 mb-[22px]`}>
