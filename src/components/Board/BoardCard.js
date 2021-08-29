@@ -20,10 +20,17 @@ const BoardCard = ({
   return (
     <div
       ref={innerRef}
-      css={tw`flex flex-col p-3 rounded-xl shadow-md bg-white`}
+      css={tw`p-3 border border-gray-100 rounded-xl my-3 bg-white`}
       {...rest}
     >
-      {cover && <img src={cover} alt={title} css={tw`mb-3 rounded-xl`} />}
+      {cover && (
+        <img
+          src={cover}
+          alt={title}
+          draggable={false}
+          css={tw`mb-3 rounded-xl select-none`}
+        />
+      )}
       <p css={tw`mb-[18px] font-noto`}>{title}</p>
       <div css={tw`flex gap-x-3 mb-[22px]`}>
         {labels?.map((name) => (
