@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-x-hidden font-poppins;
+  }
+
+  /* Override react-smooth-dnd */
+  .drop-preview {
+    @apply border border-dashed border-blue rounded-xl bg-blue-light;
+  }
+
+  .smooth-dnd-container {
+    &.horizontal {
+      & > .smooth-dnd-draggable-wrapper {
+        @apply py-4;
+      }
+    }
+
+    &.vertical {
+      &:empty {
+        @extend .drop-preview;
+        @apply flex justify-center items-center h-40 mt-4 mb-6;
+
+        &::before {
+          @apply relative text-blue;
+          content: 'Drop task here';
+        }
+      }
+    }
+  }
+
+  .card-ghost {
+    @apply transform rotate-6 cursor-move duration-200 ease-in-out;
+  }
+
+  .card-ghost-drop {
+    @apply transform rotate-0 duration-200 ease-in-out;
+  }
+
+  .card-drop-preview {
+    @extend .drop-preview;
+    @apply my-3;
+  }
+
+  .column-drop-preview {
+    @extend .drop-preview;
+    @apply m-2;
+  }
+}
