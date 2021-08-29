@@ -14,12 +14,12 @@ const Button = ({
 }) => {
   return (
     <button
-      {...{ disabled }}
       css={[
         tw`flex items-center gap-x-3 px-4 py-2 border-none rounded-lg font-poppins font-medium cursor-pointer duration-200`,
         variant === 'default' && tw`text-gray-300 bg-gray-50 hover:bg-gray-100`,
         variant === 'primary' && tw`text-white bg-blue hover:bg-blue-dark`,
       ]}
+      {...{ disabled, onClick }}
       {...props}
     >
       {startIcon && startIcon}
