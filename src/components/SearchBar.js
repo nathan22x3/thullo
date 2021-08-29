@@ -3,7 +3,7 @@ import React from 'react';
 /** @jsxImportSource @emotion/react */
 import tw from 'twin.macro';
 
-const SearchInput = () => {
+const SearchBar = () => {
   return (
     <div css={tw`overflow-hidden p-1 flex items-stretch rounded-lg shadow-md`}>
       <input
@@ -16,4 +16,4 @@ const SearchInput = () => {
   );
 };
 
-export default SearchInput;
+export default SearchBar;

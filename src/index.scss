@@ -25,8 +25,8 @@
         @apply flex justify-center items-center h-40 mt-4 mb-6;
 
         &::before {
-          @apply relative text-blue;
-          content: 'Drop task here';
+          @apply relative text-blue whitespace-pre-wrap;
+          content: 'Drop card here \A or add new one';
         }
       }
     }

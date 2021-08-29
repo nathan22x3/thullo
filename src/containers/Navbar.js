@@ -2,7 +2,7 @@ import { ReactComponent as AppsIcon } from 'assets/icons/apps.svg';
 import { ReactComponent as Logo } from 'assets/images/logo-text.svg';
 import Account from 'components/Account';
 import Button from 'components/Button';
-import SearchInput from 'components/SearchInput';
+import SearchBar from 'components/SearchBar';
 import React from 'react';
 import { Link } from 'react-router-dom';
 /** @jsxImportSource @emotion/react */
@@ -25,7 +25,7 @@ const Navbar = () => {
         </div>
       </div>
       <div css={tw`flex items-center gap-x-10`}>
-        <SearchInput />
+        <SearchBar />
         <Account name='Nathan Nguyen' />
       </div>
     </nav>

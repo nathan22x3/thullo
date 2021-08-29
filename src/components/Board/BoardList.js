@@ -1,16 +1,18 @@
 import { ReactComponent as AddIcon } from 'assets/icons/add.svg';
-import { ReactComponent as MoreIcon } from 'assets/icons/more.svg';
 import BoardCard from 'components/Board/BoardCard';
+import BoardListOptions from 'components/Board/BoardListOptions';
 import Button from 'components/Button';
+import FormControl from 'components/FormControl';
 import React, { useState } from 'react';
 import { Container, Draggable } from 'react-smooth-dnd';
 /** @jsxImportSource @emotion/react */
 import tw from 'twin.macro';
 
-const BoardColumn = ({ boardId, title, cards }) => {
+const BoardList = ({ boardId, title, cards }) => {
   const [dndCards, setDndCards] = useState(cards);
+  const [listTitle, setListTitle] = useState(title);
 
-  const onCardDrop = (result) => {
+  const handleCardDrop = (result) => {
     const { removedIndex, addedIndex, payload } = result;
     const items = JSON.parse(JSON.stringify(dndCards));
     if (removedIndex === null && addedIndex === null) return items;
@@ -22,14 +24,30 @@ const BoardColumn = ({ boardId, title, cards }) => {
     setDndCards(items);
   };
 
+  const handleRename = ({ target }) => {
+    const oldTitle = listTitle;
+    if (!target.value.trim()) {
+      setListTitle(oldTitle);
+      return;
+    }
+    setListTitle(target.value);
+  };
+
   return (
     <section css={tw`w-[250px] mx-4`}>
       <header
-        className='column-drag-handle'
+        className='list-drag-handle'
         css={tw`flex justify-between items-center mb-1 font-medium cursor-move`}
       >
-        <span>{title}</span>
-        <MoreIcon width={20} />
+        <FormControl
+          value={listTitle}
+          css={tw`bg-transparent`}
+          onChange={handleRename}
+          onClick={({ target }) => target.select()}
+          onKeyDown={({ target, code }) => code === 'Enter' && target.blur()}
+          onMouseDown={(e) => e.preventDefault()}
+        />
+        <BoardListOptions />
       </header>
 
       <Container
@@ -38,7 +56,7 @@ const BoardColumn = ({ boardId, title, cards }) => {
         dragClass='card-ghost'
         dropClass='card-ghost-drop'
         dropPlaceholder={{ showOnTop: true, className: 'card-drop-preview' }}
-        onDrop={onCardDrop}
+        onDrop={handleCardDrop}
       >
         {dndCards?.map(({ id, ...rest }) => (
           <Draggable key={id}>
@@ -55,4 +73,4 @@ const BoardColumn = ({ boardId, title, cards }) => {
   );
 };
 
-export default BoardColumn;
+export default BoardList;
